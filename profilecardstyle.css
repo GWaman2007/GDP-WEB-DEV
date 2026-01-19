@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.6s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-6px);
+}
+
+.card-header {
+    background-color: #1f2933;
+    height: 150px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #374151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+
+
+
+.card-body {
+    padding: 70px 30px 30px;
+    text-align: center;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.username {
+    color: #4b5563;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.bio {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #6b7280;
+    text-transform: uppercase;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
+}
+
+.skill-tag:hover {
+    background-color: #d1d5db;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1f2933;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #111827;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #1f2933;
+    border: 1px solid #1f2933;
+}
+
+.btn-secondary:hover {
+    background-color: #1f2933;
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-header {
+        height: 120px;
+    }
+
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+        bottom: -45px;
+        font-size: 36px;
+    }
+
+    .card-body {
+        padding: 55px 20px 20px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
