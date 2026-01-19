@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogsville - The Best Blog in the World</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-content">
+            <!-- Logo -->
+            <a href="#" class="logo">BLOGSVILLE</a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Membership</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Search and Cart Icons -->
+            <div class="header-actions">
+                <button class="icon-btn search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <button class="icon-btn cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Title -->
+    <div class="main-title-section container">
+        <h1 class="main-title">BLOGSVILLE</h1>
+        <p class="tagline">The best blog in the world. Get more out of the news.</p>
+    </div>
+
+    <!-- Main Layout: Content + Sidebar -->
+    <main class="container main-layout">
+
+        <!-- Left Column: Blog Posts -->
+        <div class="content-column">
+
+            <!-- Featured (Hero) Post -->
+            <article class="hero-post">
+                <div class="post-image-container">
+                    <img src="images/hero.jpg" alt="Luxury tent interior" class="post-image">
+                </div>
+                <div class="post-content centered-text">
+                    <div class="post-meta">
+                        <span class="category">TRAVEL</span>
+                        <span class="dot"></span>
+                        <span class="date">AUGUST 23, 2023</span>
+                    </div>
+                    <h2 class="post-title hero-title">The Complete Guide to Finding Your Perfect Tour Agent Match</h2>
+                    <p class="post-excerpt">Facilisi dignissim eget pellentesque aliquet amet. Quis lectus vestibulum in
+                        vulputate dui vitae vel.</p>
+                </div>
+            </article>
+
+            <!-- Row 1 of Secondary Posts -->
+            <div class="secondary-posts-row">
+                <article class="post-card">
+                    <div class="post-image-container">
+                        <img src="images/fashion.jpg" alt="Clothing rack" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta sub">
+                            <span class="category">FASHION</span>
+                            <span class="dot"></span>
+                            <span class="date">AUGUST 23</span>
+                        </div>
+                        <h3 class="post-title small">5 Must-Have Items For Separating Yourself From The Crowd</h3>
+                        <p class="post-excerpt small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            suscipit lorem eget faucibus.</p>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image-container">
+                        <img src="images/health.jpg" alt="Healthy person" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta sub">
+                            <span class="category">HEALTH</span>
+                            <span class="dot"></span>
+                            <span class="date">AUGUST 23</span>
+                        </div>
+                        <h3 class="post-title small">How To Avoid Making The Same Unhealthy Purchases Again</h3>
+                        <p class="post-excerpt small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            suscipit lorem eget faucibus.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Row 2 of Secondary Posts -->
+            <div class="secondary-posts-row">
+                <article class="post-card">
+                    <div class="post-image-container">
+                        <img src="images/lifestyle.jpg" alt="Shopping addict" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta sub">
+                            <span class="category">LIFESTYLE</span>
+                            <span class="dot"></span>
+                            <span class="date">AUGUST 23</span>
+                        </div>
+                        <h3 class="post-title small">Introduction: What Makes Shopping In Globally Addictive?</h3>
+                        <p class="post-excerpt small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            suscipit lorem eget faucibus.</p>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image-container">
+                        <img src="images/design.jpg" alt="Web design tools" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta sub">
+                            <span class="category">DESIGN</span>
+                            <span class="dot"></span>
+                            <span class="date">AUGUST 23</span>
+                        </div>
+                        <h3 class="post-title small">What are the Best Free & Paid Tools for Web Designers?</h3>
+                        <p class="post-excerpt small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            suscipit lorem eget faucibus.</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Sidebar -->
+        <aside class="sidebar">
+
+            <!-- Authors Widget -->
+            <div class="widget authors-widget">
+                <h4 class="widget-title">Featured Authors</h4>
+                <ul class="author-list">
+                    <li class="author-item">
+                        <img src="images/user1.jpg" alt="Esther Howard" class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Esther Howard</span>
+                            <span class="author-role">Travel Blogger</span>
+                        </div>
+                    </li>
+                    <li class="author-item">
+                        <img src="images/user2.jpg" alt="Kristin Watson" class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Kristin Watson</span>
+                            <span class="author-role">Fashion Editor</span>
+                        </div>
+                    </li>
+                    <li class="author-item">
+                        <img src="images/user3.jpg" alt="Wade Warren" class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Wade Warren</span>
+                            <span class="author-role">Lifestyle Coach</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tags Widget -->
+            <div class="widget tags-widget">
+                <h4 class="widget-title">Tags</h4>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">Books</a>
+                    <a href="#" class="tag">Clothes</a>
+                    <a href="#" class="tag">Cooking</a>
+                    <a href="#" class="tag">Economy</a>
+                    <a href="#" class="tag">Garden</a>
+                    <a href="#" class="tag">Health</a>
+                    <a href="#" class="tag">Holiday</a>
+                    <a href="#" class="tag">Marketing</a>
+                    <a href="#" class="tag">Tech</a>
+                    <a href="#" class="tag">Travel</a>
+                    <a href="#" class="tag">University</a>
+                </div>
+            </div>
+
+            <!-- Trending Widget -->
+            <div class="widget trending-widget">
+                <h4 class="widget-title">Trending</h4>
+                <ul class="trending-list">
+                    <li class="trending-item">
+                        <img src="images/thumb1.jpg" alt="Travel benefits" class="trending-thumb">
+                        <div class="trending-info">
+                            <a href="#" class="trending-link">What are the benefits of traveling and Why is it
+                                important?</a>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <img src="images/thumb2.jpg" alt="Animations" class="trending-thumb">
+                        <div class="trending-info">
+                            <a href="#" class="trending-link">Main Causes After-market Animations Are Popular?</a>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <img src="images/thumb3.jpg" alt="Jet lag" class="trending-thumb">
+                        <div class="trending-info">
+                            <a href="#" class="trending-link">What is the Best Way to Avoid Jet Lag and Stay
+                                Healthy?</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </main>
+
+    <!-- Dark Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">BLOGSVILLE</div>
+                    <p class="footer-desc">Where great stories live. Read, write, and grow with the world's best ideas.
+                    </p>
+                </div>
+
+                <!-- Column 2: Explore -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Write</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Subscribe -->
+                <div class="footer-col subscribe-col">
+                    <h4 class="footer-heading">Subscribe</h4>
+                    <p class="footer-sub-text">Get the best stories straight to your inbox.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" class="email-input">
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Blogsville. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
