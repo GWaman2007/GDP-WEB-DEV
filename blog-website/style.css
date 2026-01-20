@@ -4,28 +4,39 @@
    throughout the website.
    ========================================= */
 :root {
-  --primary-color: #000000;
-  --secondary-color: #666666;
-  --accent-color: #333333;
-  --background-color: #ffffff;
-  --surface-color: #f8f9fa;
-  --border-color: #e5e5e5;
+    /* Core colors */
+    --primary-color: #ffffff;        /* Primary text on black */
+    --secondary-color: #cfc6b8;      /* Soft luxury contrast text */
+    --accent-color: #d4af37;         /* Classic premium gold */
 
-  /* Footer Colors */
-  --footer-bg: #111111;
-  --footer-text: #ffffff;
-  --footer-text-muted: #aaaaaa;
-  --btn-green: #07c255; /* Bright green for subscribe button */
+    /* Backgrounds */
+    --background-color: #000000;     /* TRUE black background */
+    --surface-color: #0f0f0f;        /* Elevated surface (cards/sections) */
+    --border-color: #2a241c;         /* Gold-brown tinted borders */
 
-  --font-heading: "Abril Fatface", cursive;
-  --font-body: "Inter", sans-serif;
+    /* Footer */
+    --footer-bg: #000000;
+    --footer-text: #ffffff;
+    --footer-text-muted: #9e8b6f;    /* Muted brown-gold */
 
-  --container-width: 1200px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 48px;
+    /* Buttons / CTAs */
+    --btn-green: #8a5a1f;             /* Rich golden brown leather tone */
+
+    /* Typography */
+    --font-heading: "Abril Fatface", cursive;
+    --font-body: "Inter", sans-serif;
+
+    /* Layout */
+    --container-width: 1200px;
+
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 48px;
 }
+
+
 
 /* =========================================
    Reset & Base Styles
@@ -286,7 +297,7 @@ img {
    ========================================= */
 .widget {
   padding: var(--spacing-lg);
-  background-color: #fff;
+  background-color: #000000;
   border: 1px solid var(--surface-color);
 }
 
