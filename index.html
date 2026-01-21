@@ -1,122 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile Card</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
-    
-    <div class="profile-card">
-        
-        
-        <div class="card-header">
-           
-            <div class="profile-pic">
-                <marquee>😎>>>😂>>>🤣</marquee>
-            </div>
-        </div>
-        
-        <div class="card-body">
-            
-            <h1 class="name" id="name">AMAN</h1>
-            <p class="username">@code</p>
-            
-            
-            <p class="bio">
-                <marquee>💻 Full Stack Developer | 🎨 UI/UX Enthusiast | 
-                ☕ Coffee Lover | 🎮 Gamer</marquee>
-            </p>
-            
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">1.2K</div>
-                    <div class="stat-label">Followers</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">543</div>
-                    <div class="stat-label">Following</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">89</div>
-                    <div class="stat-label">Posts</div>
-                </div>
-                
-            </div>
-            
-            
-            <div class="skills">
-                <span class="skill-tag" id="html">HTML</span>
-                <span class="skill-tag" id="css">CSS</span>
-                <span class="skill-tag" id="js">JavaScript</span>
-                <span class="skill-tag" id="rjs">React</span>
-                <span class="skill-tag" id="py">Python</span>
-            </div>
-            
-            
-            <div class="buttons">
-                <button class="btn btn-primary" id="followBtn" >Follow</button>
-                <button class="btn btn-secondary" id="messageBtn"><a target="_blank" href="https://in.linkedin.com/in/aman-talikoti-905b33231">Message</a></button>
-            </div>
-        </div>
-    </div>
-    <script>
-        const followBtn = document.getElementById('followBtn');
-        const mesageBtn = document.getElementById('messageBtn');
-        const name = document.getElementById('name');
-        const html = document.getElementById('html');
-        const css = document.getElementById('css');
-        const js = document.getElementById('js');
-        const rjs = document.getElementById('rjs');
-        const py = document.getElementById('py');
 
+  <h1>📝 Notes App</h1>
 
-        followBtn.addEventListener('click',function(){
-            if (followBtn.textContent=="Follow"){
-            followBtn.textContent="Followed";
-            followBtn.css="color : #FF0000)";
-            alert("Do not press this again");
-        }else{
-            alert("You are Hacked");
-        }
-        });
-        html.addEventListener('mouseover',function(){
-            if (html.textContent=="HTML")
-            html.textContent="LMTH";
-            else
-            html.textContent="HTML"
-        });
-        css.addEventListener('mouseover',function(){
-            if (css.textContent=="CSS")
-            css.textContent="SSC";
-            else
-            css.textContent="CSS"
-        });
-        js.addEventListener('mouseover',function(){
-            if (js.textContent=="JavaScript")
-            js.textContent="tpirSavaJ";
-            else
-            js.textContent="JavaScript"
-        });
-        rjs.addEventListener('mouseover',function(){
-            if (rjs.textContent=="React")
-            rjs.textContent="tcaeR";
-            else
-            rjs.textContent="React"
-        });
-        py.addEventListener('mouseover',function(){
-            if (py.textContent=="Python")
-            py.textContent="nohtyP";
-            else
-            py.textContent="Python"
-        });
-    </script>
+  <div class="note-form">
+    <input type="text" id="title" placeholder="Title" />
+    <textarea id="content" placeholder="Write your note..."></textarea>
+    <button onclick="addNote()">Add Note</button>
+  </div>
+
+  <h2 style="display: flex; justify-content: center;">All Notes</h2>
+  <div id="notes">
+    <!-- Notes will be displayed here -->   
+    
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
